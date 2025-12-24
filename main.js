@@ -39,6 +39,8 @@ async function main() {
 
       if (cr.status === 1) {
         console.log("签到成功")
+        console.log("响应内容")
+        console.dir(cr, { depth: null })
       } else {
         console.log("响应内容")
         console.dir(cr, { depth: null })
