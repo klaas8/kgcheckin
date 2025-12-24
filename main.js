@@ -41,6 +41,7 @@ async function main() {
         console.log("签到成功")
         console.log("响应内容")
         console.dir(cr, { depth: null })
+        break
       } else {
         console.log("响应内容")
         console.dir(cr, { depth: null })
