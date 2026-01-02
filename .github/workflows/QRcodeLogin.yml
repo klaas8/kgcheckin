@@ -49,6 +49,10 @@ jobs:
           git config --local user.name "github-actions"
           git config --local user.email "github-actions@github.com"
           sed -i "s/<sub>状态:.*<\\/sub>/<sub>状态: 已过期<\\/sub>/" README.md
-          git add README.md
-          git commit -m "更新状态" || echo "无更改"
-          git push --quiet --force-with-lease
+          if ! git diff --quiet README.md; then
+            git add README.md
+            git commit -m "更新状态" || echo "无更改"
+            git push --quiet --force-with-lease
+          else
+            echo "README.md 无变更，跳过提交"
+          fi
