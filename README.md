@@ -1,12 +1,10 @@
 # 酷狗签到
 
 GitHub Actions 实现 `酷狗概念VIP` 自动签到
-每天领取总计 `两天酷狗概念VIP`  
-术语1
-: 定义1
+每天领取总计 `两天酷狗概念VIP`
 
-术语2
-: 定义2
+H<sub>2</sub>O
+E = mc<sup>2</sup>
 
 > [!warning]
 > 注意事项
