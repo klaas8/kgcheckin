@@ -3,8 +3,7 @@
 GitHub Actions 实现 `酷狗概念VIP` 自动签到
 每天领取总计 `两天酷狗概念VIP`
 
-H<sub>2</sub>O
-E = mc<sup>2</sup>
+:smile: :rocket: :star: :octocat:
 
 > [!warning]
 > 注意事项
