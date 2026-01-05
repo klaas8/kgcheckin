@@ -1,5 +1,15 @@
 # 酷狗签到
+<details>
+<summary>点击查看详情</summary>
 
+这里是详细内容...
+
+bash
+
+echo "可以包含代码块"
+
+
+</details>
 <table align="center">
   <tr>
     <th>登录</th>
