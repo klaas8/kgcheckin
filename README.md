@@ -7,11 +7,11 @@ GitHub Actions 实现 `酷狗概念VIP` 自动签到
 <table align="center">
   <tr>
     <th>登录</th>
-    <th id="dl">2026-01-04</th>
+    <th id="dl">2026-01-05</th>
   </tr>
   <tr>
     <th>预过期</th>
-    <th id="gq">2026-03-04</th>
+    <th id="gq">2026-03-05</th>
   </tr>
 </table>
 <div align="center">
