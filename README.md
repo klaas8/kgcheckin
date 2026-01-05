@@ -12,6 +12,7 @@
   </tr>
 </table>
 </details>
+
 ```mermaid
 graph TD;
     A-->B;
@@ -19,6 +20,7 @@ graph TD;
     B-->D;
     C-->D;
 ```
+
 <div align="center">
   <img src="./src/0ff02f9114f7588108a1dec95ec034621001.png" alt="登录二维码" width="200"/>
   <br>
