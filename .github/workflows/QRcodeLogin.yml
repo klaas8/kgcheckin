@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: 检出仓库
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT }}
       - name: 创建node
         uses: actions/setup-node@v3
         with:
