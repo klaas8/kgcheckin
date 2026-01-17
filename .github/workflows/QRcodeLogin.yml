@@ -2,16 +2,13 @@ name: QRcodeLogin
 on:
   workflow_dispatch:
 
-env:
-  PAT: ${{ secrets.PAT }}
-
 jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
       - name: 验证 PAT 配置
-        if: env.PAT == ''
+        if: ${{ secrets.PAT }} == ''
         run: |
           echo "❌ 错误: PAT 密钥未配置"
           echo "请按照以下步骤配置:"
