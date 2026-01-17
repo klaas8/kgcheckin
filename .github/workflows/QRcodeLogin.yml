@@ -2,13 +2,16 @@ name: QRcodeLogin
 on:
   workflow_dispatch:
 
+env:
+  PAT: ${{ secrets.PAT }}
+
 jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 3
     steps:
       - name: 验证 PAT 配置
-        if: ${{ secrets.PAT }} == ''
+        if: env.PAT == ''
         run: |
           echo "❌ 错误: PAT 密钥未配置"
           echo "请按照以下步骤配置:"
@@ -23,7 +26,7 @@ jobs:
       - name: 检出仓库
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ env.PAT }}
       - name: 创建node
         uses: actions/setup-node@v3
         with:
@@ -38,7 +41,7 @@ jobs:
           sudo apt update
           sudo apt install gh -y
           gh --version
-          echo "${{ secrets.PAT }}" | gh auth login --with-token
+          echo "${{ env.PAT }}" | gh auth login --with-token
           gh auth status
       - name: Cache node_modules in api directory
         id: cache-npm
@@ -55,7 +58,7 @@ jobs:
         id: login
         run: npm run qrcode
         env:
-          PAT: ${{ secrets.PAT }}
+          PAT: ${{ env.PAT }}
           GITHUB_REPOSITORY: ${{ github.repository }}
       - name: push md
         if: always()
