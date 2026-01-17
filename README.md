@@ -14,11 +14,11 @@
 </details>
 
 <div align="center">
-  <img src="./src/428d9e156579acfb6fb30addaea24a021001.png" alt="登录二维码" width="200"/>
+  <img src="./src/076e71f59310970c85d429ab6e26bbe21001.png" alt="登录二维码" width="200"/>
   <br>
   <sub>请使用酷狗概念版扫码</sub>
   <br>
-  <sub>状态: 已过期</sub>
+  <sub>状态: 等待扫码登录</sub>
   <br>
   <br>
 </div>
